@@ -1,0 +1,9 @@
+<div class="product-department">
+  <span *ngFor="let name of product.department; let i=index">
+    <a href="#">{{ name }}</a>
+    <span>{{ i < (product.department.length-1) ? '>' : ''}}</span>
+    <!--  The expression {{i < (product.department.length-1) ? '>' : ''}} says that we only want to
+          use the '>' character if we’re not the last department. On the last department just show an empty
+          string ''.-->
+  </span>
+</div>
